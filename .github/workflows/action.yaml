@@ -3,7 +3,7 @@ on:
   workflow_dispatch
 jobs:
   init-job:
-    runs-on: self-hosted
+    runs-on: [Linux]
     steps:
     - run: echo "Hello Custom Runner"
     - run: echo $HOSTNAME

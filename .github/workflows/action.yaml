@@ -3,8 +3,8 @@ on:
   workflow_dispatch
 jobs:
   init-job:
-    runs-on: [Linux]
+    runs-on: [X64]
     steps:
-    - run: echo "Hello Custom Runner"
+    - run: echo "Hello Custom Runner new"
     - run: echo $HOSTNAME
     - run: ls -la ~

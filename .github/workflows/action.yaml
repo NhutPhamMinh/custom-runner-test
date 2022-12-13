@@ -1,0 +1,9 @@
+name: custom runner
+on:
+  workflow_dispatch
+jobs:
+  init-job:
+    runs-on: self-hosted
+    steps:
+    - run: echo "Hello Custom Runner"
+    - run: echo $HOSTNAME
